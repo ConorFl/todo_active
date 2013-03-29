@@ -8,6 +8,5 @@ attribute_hash = {}
 100.times do |task|
   attribute_hash[:description] = Faker::Lorem.sentence(3)
   attribute_hash[:status] = :incomplete
-  puts attribute_hash.inspect
   Task.create!(attribute_hash) 
 end

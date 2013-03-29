@@ -6,6 +6,7 @@ require_relative 'config/application'
 desc "create the database"
 task "db:create" do
   puts "Creating file #{DB_PATH} if it doesn't exist..."
+  puts DB_PATH
   touch DB_PATH
 end
 
